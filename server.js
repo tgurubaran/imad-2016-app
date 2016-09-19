@@ -5,12 +5,27 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var article1 = {
-    title: "Article1 - Gurubaran",
-    heading: "Hindu Festival",
-    date: "30 Oct 2016",
-    content: "Deepavali"
-};
+var articles = {
+    article1 = {
+        title: "Article1 - Gurubaran",
+        heading: "Hindu Festival",
+        date: "30 Oct 2016",
+        content: "Deepavali"
+    },
+    article2 = {
+        title: "Article2 - Gurubaran",
+        heading: "Christian Festival",
+        date: "25 Dec 2016",
+        content: "Christmas"
+    },
+    article3 = {
+        title: "Article3 - Gurubaran",
+        heading: "Muslim Festival",
+        date: "12 Sep 2016",
+        content: "Eid"
+    }
+
+}
 
 function createTemplate (data) {
     var title = data.title;
