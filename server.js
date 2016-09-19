@@ -72,13 +72,6 @@ app.get('/:articleName',function(req,res){
   res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/article2',function(req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'article2.html'));
-});
-
-app.get('/article3',function(req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'article3.html'));
-});
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
