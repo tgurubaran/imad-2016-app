@@ -5,6 +5,12 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var article1 = {
+    title: "Article1 - Gurubaran",
+    heading: "Hindu Festival",
+    date: "30 Oct 2016",
+    content: "Deepavali"
+};
 
 function createTemplate (data) {
     var title = data.title;
@@ -24,7 +30,7 @@ function createTemplate (data) {
     <div>
         <a href = "/"> Home </a>
     </div>
-    <h4> ${date} </h4>
+    <h4> $heading}  ${date} </h4>
     <hr/>
     <div class = container>
     <p> Festival in India - ${content} </p>
