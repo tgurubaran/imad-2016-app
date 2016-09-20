@@ -25,7 +25,7 @@ var articles = {
         content: "Eid"
     }
 
-}
+};
 
 function createTemplate (data) {
     var title = data.title;
