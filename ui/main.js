@@ -10,6 +10,6 @@ function moveRight() {
     img.style.marginLeft = marginLeft + "px";
 }
 
-img.onClick = function () {
+img.onKeyDown = function () {
     var interval =setInterval(moveRight,10);
 };
