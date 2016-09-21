@@ -5,8 +5,8 @@ element.innerHTML = "This is the trick";
 
 var img = document.getElementById("madi");
 var marginLeft = 0;
-var function moveRight() {
-    marginLeft += 10px;
+function moveRight() {
+    marginLeft = marginLeft + 10;
     img.style.marginLeft = marginLeft + "px";
 }
 
